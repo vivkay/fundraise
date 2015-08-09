@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.red {
+    color: red;
+}
+
+.block {
+    display: block;
+}
+
+.hero {
+    max-height: 75vh
+    position: relative;
+    overflow: hidden;
+    background: url("../images/mard.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    padding-top: 56.25%;
+}
+
+.button {
+    bottom: 100px;
+    background-color: red;
+    border: 1px solid yellow;
+    padding: 1em;
+    margin-bottom: 2em;
+    display: inline-block;
+}
+
+/* These control hero banner colour and behaviour as a parent element */
+
+.banner-solid {
+    position: relative;
+    z-index: 2;
+    height: 90vh;
+    width: auto;
+    background-color: #20A5D3;
+    text-align: center;
+    padding: 4em;
+}
+
+.banner-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+/* End hero banner background & behaviour styling */
+
+.push-top {
+    margin-top: 1em;
+}
+
+.text-shadow {
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+/* Text Shadow resource from http://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/ and MarkDotto.com */
+
+/*sparks code in animate.css*/
+
+
+/* flying character animation in animate.css */
+.flying {
+    position: absolute;
+}
+
+.cta-tag {
+    font-size: 1.75em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 2rem;
+}
+
+.cta-btn-1 {
+    display: inline-block;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, .25);
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.cta-btn-1:hover {
+	background-color: #329ec2;
+}
+
+.cta-btn-1:active {
+	position:relative;
+    background-color: rgba(255, 255, 255, .6);
+    color: #20A5D3;
+	top: 3px;
+}
+
+.btn-buffer {
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.btn-buffer-sml {
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 0;
+    margin-bottom: 4em;
+}
+
+.cta-btn-sml {
+    height: auto;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    background-color: white;
+    border: 4px solid red;
+    border-radius: 10px;
+}
+
+.cta-btn-sml:active{
+    height: auto;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    background-color: red;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+.cta-btn-2 {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    background-color: white;
+    padding: 1em;
+    height: auto;
+    border: 4px solid red;
+    border-radius: 10px;
+    -webkit-animation: color-change 3s infinite alternate;
+    -moz-animation: color-change 3s infinite alternate;
+    -ms-animation: color-change 3s infinite alternate;
+    -o-animation: color-change 3s infinite alternate;
+    animation: color-change 3s infinite alternate;
+}
+
+.cta-btn-2:hover {
+    background-color: red;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.cta-btn-2:active {
+    position:relative;
+    background-color: rgba(255, 255, 255, .6);
+    color: red;
+    top: 3px;
+}
+
+.side-graphic-sml {
+    margin-left: 35%;
+    margin-top: -15px;
+    z-index: -1;
+    display: block;
+    height: 250px;
+    width: auto;
+    background-image: url("../images/rappel.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    position: relative;
+    -webkit-animation: 3s ease 0s normal none infinite swing;
+    -webkit-transform-origin: center top;
+}
+
+.side-graphic {
+    z-index: -1;
+    margin-top: -10px;
+    height: 533px;
+    width: 20%;
+    background-image: url("../images/rappel.png");
+    position: fixed;
+    right: 5%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-animation: 3s ease 0s normal none infinite swing;
+    -webkit-transform-origin: center top;
+}
+
+.side-graphic:hover {
+    background-image: url("../images/rappel2.png");
+    background-repeat: no-repeat;
+}
+
+/*
+.sprite {
+    z-index: 5;
+    display: block;
+    height: 402px;
+    background-image: url(../images/rappel-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    -webkit-animation: 3s ease 0s normal none infinite swing;
+    -webkit-transform-origin: center top;
+
+}
+
+.sprite:hover {
+    background-position: 0 -400px;
+}
+
+*/
+
+.scroll-btn {
+    bottom: 10px;
+    margin: 2.5em auto;
+    height: 50px;
+    width: 50px;
+}
+
+.arrow-down {
+    margin: 2.5em auto;
+    opacity: .5;
+    position: absolute;
+    bottom: 1%;
+    left: calc(50% - 20px);
+    z-index: 4;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+}
+
+.scroll {
+    height: 18px;
+}
+
+.img-flex {
+    display: block;
+    width: 30%;
+}
+
+.img-fix {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.gutter {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.shadow {
+    box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.elves {
+    padding-bottom: .5em;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.elves-sml {
+    padding-bottom: .5em;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #20A5D3;
+    color: white;
+    height: 30%;
+    padding: 1rem;
+}
+
+.logos {
+    text-align: center;
+}
+
+.es-logo {
+    height: 100px;
+    width: auto;
+    display: inline-block;
+}
+
+.dz-logo {
+    padding-bottom: 10px;
+    margin-left: 2em;
+    height: 80px;
+    width: auto;
+    display: inline-block;
+}
+
+
+@media only screen and (min-width: 25em) {
+
+
+.cta-tag {
+    font-size: 1.25em;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-bottom: 1.25rem;
+}
+
+}
+
+
+@media only screen and (min-width: 38em) {
+
+}
+
+
+
+@media only screen and (min-width: 60em) {
+
+
+.cta-tag {
+    font-size: 1.75em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 2rem;
+}
+
+}
+
+

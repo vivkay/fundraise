@@ -1,0 +1,376 @@
+
+/* This is code for the animated sparks in the hero */
+
+.sparks {
+    margin: 0 auto;
+    width: 85%;
+    padding: 1em;
+}
+
+.sparks-sml {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em;
+}
+
+.appear-delay {
+    opacity: 0;
+    -webkit-animation: appear-delay 3s linear forwards;
+    animation: appear-delay 3s linear forwards;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes appear-delay {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes appear-delay {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.appear1 {
+    opacity: 0;
+    -webkit-animation: appear .25s linear forwards;
+    animation: appear .25s linear forwards;
+}
+
+@-webkit-keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.appear2 {
+    opacity: 0;
+    -webkit-animation: appear .25s linear forwards;
+    animation: appear .25s linear forwards;
+    -webkit-animation-delay: .25s;
+    animation-delay: .25s;
+}
+
+@-webkit-keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.appear3 {
+    opacity: 0;
+    -webkit-animation: appear .25s linear forwards;
+    animation: appear .25s linear forwards;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+@-webkit-keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes appear {
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+/* This is the flying superhero character in the hero */
+
+.slide-left {
+    -webkit-transform: translateX(2500px);
+    transform: translateX(2500px);
+    -webkit-animation: right-in 5s linear forwards;
+    animation: right-in 5s linear forwards;
+}
+
+@-webkit-keyframes right-in {
+
+    0% {
+        -webkit-transform: translateX(2500px);
+        }
+
+    5% {
+        -webkit-transform: translateX(800px);
+    }
+
+    50% {
+      -webkit-transform: translateX(100px);
+    }
+
+     60% {
+        -webkit-transform: translate(200px);
+     }
+
+     70% {
+        -webkit-transform: translate(-1000px);
+     }
+
+    100% {
+        -webkit-transform: translateX(-2500px);
+    }
+
+}
+
+@keyframes right-in {
+
+    0% {
+        transform: translateX(2500px);
+        }
+
+    5% {
+        transform: translateX(800px);
+    }
+
+    50% {
+      transform: translateX(100px);
+    }
+
+     60% {
+        transform: translate(200px);
+     }
+
+     70% {
+        transform: translate(-1000px);
+     }
+
+    100% {
+        transform: translateX(-2500px);
+    }
+}
+
+/*slide-left-sml for mobile*/
+
+
+.slide-left-sml {
+    -webkit-transform: translateX(800px);
+    transform: translateX(800px);
+    -webkit-animation: right-in-sml 3.25s linear forwards;
+    animation: right-in-sml 3.25s linear forwards;
+}
+
+@-webkit-keyframes right-in-sml {
+
+    0% {
+        -webkit-transform: translateX(800px);
+        }
+
+    5% {
+        -webkit-transform: translateX(500px);
+    }
+
+    50% {
+      -webkit-transform: translateX(50px);
+    }
+
+     60% {
+        -webkit-transform: translate(80px);
+     }
+
+     70% {
+        -webkit-transform: translate(-100px);
+     }
+
+    100% {
+        -webkit-transform: translateX(-800px);
+    }
+
+}
+
+@keyframes right-in-sml {
+
+    0% {
+        transform: translateX(800px);
+        }
+
+    5% {
+      transform: translateX(500px);
+    }
+
+    50% {
+      transform: translateX(50px);
+    }
+
+     60% {
+        transform: translate(80px);
+     }
+
+     70% {
+       transform: translate(-100px);
+     }
+
+    100% {
+      transform: translateX(-800px);
+    }
+
+}
+
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* This animation is used on the scroll arrow in the hero */
+
+.bounce {
+    -webkit-animation: bounce 1s linear alternate infinite;
+    animation: bounce 1s linear alternate infinite;
+}
+
+@-webkit-keyframes bounce {
+
+    0% {
+        -webkit-transform: translateY(20px)
+    }
+
+    100% {
+        -webkit-transform: translateY(10px)
+    }
+}
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(20px)
+    }
+
+    100% {
+        transform: translateY(10px)
+    }
+}
+
+
+/* This animates the swinging side image */
+
+.swing {
+    -webkit-transform-origin: center top;
+    -webkit-animation: 3s ease 0s normal none infinite swing;
+    -webkit-transform-origin: center top;
+    transform-origin: center top;
+    animation: 3s ease 0s normal none infinite swing;
+    transform-origin: center top;
+}
+
+@-webkit-keyframes swing {
+     0% {
+       -webkit-transform: rotate(5deg);
+     }
+     50% {
+       -webkit-transform: rotate(-5deg);
+     }
+    100%{
+       -webkit-transform: rotate(5deg);
+     }
+}
+
+
+@keyframes swing {
+     0% {
+       transform: rotate(5deg);
+     }
+     50% {
+       transform: rotate(-5deg);
+     }
+    100%{
+       transform: rotate(5deg);
+     }
+}
+
+
+
+/* This changes the colour of text from blue to red, used on a span class*/
+
+.color-change {
+    -webkit-animation: color-change 3s infinite alternate;
+    -moz-animation: color-change 3s infinite alternate;
+    -ms-animation: color-change 3s infinite alternate;
+    -o-animation: color-change 3s infinite alternate;
+    animation: color-change 3s infinite alternate;
+}
+
+@-webkit-keyframes color-change {
+    from { color: #20A5D3; }
+    to { color: #FF3300; }
+}
+@-moz-keyframes color-change {
+    from { color: #20A5D3; }
+    to { color: #FF3300; }
+}
+@-ms-keyframes color-change {
+    from { color: #20A5D3; }
+    to { color: #FF3300; }
+}
+@-o-keyframes color-change {
+    from { color: #20A5D3; }
+    to { color: #FF3300; }
+}
+@keyframes color-change {
+    from { color: #20A5D3; }
+    to { color: #FF3300; }
+}
