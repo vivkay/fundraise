@@ -75,6 +75,19 @@ body {
     margin-bottom: 2em;
 }
 
+.top-btn-sml {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 1em 3em 1em 3em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, .25);
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-bottom: 50%;
+}
+
 .top-btn:hover {
     background-color: #329ec2;
 }
@@ -189,10 +202,10 @@ body {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: red;
-    background-color: white;
-    border: 4px solid red;
+    color: white;
+    background-color: #329ec2;
     border-radius: 10px;
+    margin-bottom: 1.5em;
 }
 
 .cta-btn-sml:active{
@@ -201,9 +214,8 @@ body {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: red;
-    background-color: red;
-    border: 4px solid white;
+    color: white;
+    background-color: #5BB1CE;
     border-radius: 10px;
 }
 
@@ -211,61 +223,44 @@ body {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: red;
-    background-color: white;
-    padding: 1em;
+    padding: 2em 1em 2em 1em;
     height: auto;
-    border: 4px solid red;
     border-radius: 10px;
+    background: #329ec2;
+    color: white;
+    margin-bottom: 2em;
 }
 
 .cta-btn-2:hover {
-    background-color: red;
+    background-color: #5BB1CE;
     color: white;
-    border: 3px solid white;
     border-radius: 10px;
 }
 
 .cta-btn-2:active {
     position:relative;
-    background-color: rgba(255, 255, 255, .6);
+    background-color: #5BB1CE;
     color: red;
     top: 3px;
 }
 
 .side-graphic-sml {
-    margin-left: 35%;
-    margin-top: -15px;
-    z-index: -1;
-    display: block;
-    height: 250px;
-    width: auto;
-    background-image: url("../images/rappel.png");
-    background-repeat: no-repeat;
-    background-size: 150px;
-    position: relative;
-    -webkit-animation: 3s ease 0s normal none infinite swing;
-    -webkit-transform-origin: center top;
+    display: none;
 }
 
 .side-graphic {
     z-index: -1;
     margin-top: -10px;
-    height: 533px;
+    height: 550px;
     width: 20%;
-    background-image: url("../images/rappel.png");
+    background-image: url("../images/viv.png");
     position: fixed;
     right: 5%;
     top: 0;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80%;
     -webkit-animation: 3s ease 0s normal none infinite swing;
     -webkit-transform-origin: center top;
-}
-
-.side-graphic:hover {
-    background-image: url("../images/rappel2.png");
-    background-repeat: no-repeat;
 }
 
 /*
